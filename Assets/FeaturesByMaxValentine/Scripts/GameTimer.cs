@@ -9,7 +9,7 @@ namespace MaxValentine
 
         private void update()
         {
-            gameTimer 
+            gameTimer; 
         }
 
         /// <summary>
