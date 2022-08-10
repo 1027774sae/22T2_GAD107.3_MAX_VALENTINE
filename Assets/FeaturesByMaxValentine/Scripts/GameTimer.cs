@@ -1,16 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 namespace MaxValentine
 {
     public class GameTimer : MonoBehaviour
     {
-        [SerializeField] float gameTimer = 60;
+        public int timerTime;
+        public Text timerDisplay;
 
-        private void update()
+        private void Start()
         {
-            gameTimer; 
+            StartCoroutine(CountdownToEnd());
         }
+
+        IEnumerable CountdownToEnd()
+        {
+            while(timerTime > 0)
+            {
+                timerDisplay.text = timerTime.ToString();
+
+                yield return new WaitForSeconds(1f);
+
+                timerTime--;
+            }
+
+            timerDisplay.text = "GAME OVER";
+
+            yield return new WaitForSeconds(1f);
+
+            timerDisplay.gameObject.SetActive(false);
+        }
+        // Section of code above was taken from:
+        // https://www.youtube.com/watch?v=ulxXGht5D2U&ab_channel=TurboMakesGames 
+
 
         /// <summary>
         /// Start the game timer with 60 seconds

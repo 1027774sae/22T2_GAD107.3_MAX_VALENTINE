@@ -135,7 +135,7 @@ public class TankGameManager : MonoBehaviour
     /// <summary>
     /// Called when we want to reset the round, there is a 2 second delay before the round starts
     /// </summary>
-    private void ResetRound()
+    public void ResetRound()
     {
         TankGameEvents.OnRoundResetEvent?.Invoke();
         TankGameEvents.SpawnTanksEvent(2); // might want to do different things between tank spawed and game started
