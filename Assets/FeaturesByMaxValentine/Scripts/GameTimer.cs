@@ -9,28 +9,32 @@ namespace MaxValentine
         public int timerTime;
         public Text timerDisplay;
 
-        private void Start()
-        {
-            StartCoroutine(CountdownToEnd());
-        }
+        //
+        //  private void Start()
+        //{
+        //    StartCoroutine(CountdownToEnd());
+        //}
 
-        IEnumerable CountdownToEnd()
-        {
-            while(timerTime > 0)
-            {
-                timerDisplay.text = timerTime.ToString();
+        //IEnumerable CountdownToEnd()
+        //{
+        //   while(timerTime > 0)
+        //    {
+        //        timerDisplay.text = timerTime.ToString();
 
-                yield return new WaitForSeconds(1f);
+        //        yield return new WaitForSeconds(1f);
 
-                timerTime--;
-            }
+        //        timerTime--;
+        //    }
 
-            timerDisplay.text = "GAME OVER";
+        //    timerDisplay.text = "GAME OVER";
 
-            yield return new WaitForSeconds(1f);
+        //    yield return new WaitForSeconds(1f);
 
-            timerDisplay.gameObject.SetActive(false);
-        }
+        //    timerDisplay.gameObject.SetActive(false);
+        //}
+        //}
+        /// </summary>
+       
         // Section of code above was taken from:
         // https://www.youtube.com/watch?v=ulxXGht5D2U&ab_channel=TurboMakesGames 
 

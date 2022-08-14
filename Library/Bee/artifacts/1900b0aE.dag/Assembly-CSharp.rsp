@@ -332,6 +332,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/FeaturesByMaxValentine/Scripts/DestructibleCover.cs"
 "Assets/FeaturesByMaxValentine/Scripts/GameTimer.cs"
+"Assets/FeaturesByMaxValentine/Scripts/TeleportPads.cs"
 "Assets/Scripts/GameScripts/TankCameraController.cs"
 "Assets/Scripts/GameScripts/TankGameEvents.cs"
 "Assets/Scripts/GameScripts/TankGameManager.cs"

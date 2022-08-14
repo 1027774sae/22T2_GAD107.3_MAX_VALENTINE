@@ -70,8 +70,9 @@
     <Compile Include="Assets\Scripts\TankScripts\TankMainGun.cs" />
     <Compile Include="Assets\Scripts\TankScripts\Tank.cs" />
     <Compile Include="Assets\Scripts\GameScripts\TankUIManager.cs" />
-    <Compile Include="Assets\Scripts\GameScripts\UILocalRotator.cs" />
     <Compile Include="Assets\FeaturesByMaxValentine\Scripts\DestructibleCover.cs" />
+    <Compile Include="Assets\Scripts\GameScripts\UILocalRotator.cs" />
+    <Compile Include="Assets\FeaturesByMaxValentine\Scripts\TeleportPads.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
