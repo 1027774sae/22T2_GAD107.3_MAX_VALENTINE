@@ -56,6 +56,7 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\FeaturesByMaxValentine\Scripts\TeleportPadBlue.cs" />
     <Compile Include="Assets\Scripts\TankScripts\TankMovement.cs" />
     <Compile Include="Assets\Scripts\TankScripts\TankParticleEffects.cs" />
     <Compile Include="Assets\Scripts\GameScripts\TankCameraController.cs" />
@@ -64,15 +65,17 @@
     <Compile Include="Assets\Scripts\GameScripts\TankGameManager.cs" />
     <Compile Include="Assets\Scripts\GameScripts\TankSpawnManager.cs" />
     <Compile Include="Assets\FeaturesByMaxValentine\Scripts\GameTimer.cs" />
+    <Compile Include="Assets\FeaturesByMaxValentine\Scripts\Teleporter.cs" />
     <Compile Include="Assets\Scripts\TankScripts\TankControls.cs" />
     <Compile Include="Assets\Scripts\GameScripts\TankGameEvents.cs" />
     <Compile Include="Assets\Scripts\TankScripts\TankSoundEffects.cs" />
     <Compile Include="Assets\Scripts\TankScripts\TankMainGun.cs" />
     <Compile Include="Assets\Scripts\TankScripts\Tank.cs" />
     <Compile Include="Assets\Scripts\GameScripts\TankUIManager.cs" />
-    <Compile Include="Assets\FeaturesByMaxValentine\Scripts\DestructibleCover.cs" />
+    <Compile Include="Assets\FeaturesByMaxValentine\Scripts\ObjectDamager.cs" />
     <Compile Include="Assets\Scripts\GameScripts\UILocalRotator.cs" />
-    <Compile Include="Assets\FeaturesByMaxValentine\Scripts\TeleportPads.cs" />
+    <Compile Include="Assets\FeaturesByMaxValentine\Scripts\DestructibleObjects.cs" />
+    <Compile Include="Assets\FeaturesByMaxValentine\Scripts\EventManagerTeleport.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
