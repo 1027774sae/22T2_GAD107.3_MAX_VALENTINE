@@ -5,13 +5,24 @@ namespace MaxValentine
 {
     public class DestructibleObjects : MonoBehaviour
     {
-        
-        public float objectHealth = 50;
+        [SerializeField] private GameObject structure;
+        [SerializeField] public int objectHealth =50;
+        [SerializeField] public int objectDamage = 10;
 
-        private void OnTriggerEnter(Collider other)
+        private void OnEnable()
         {
-            objectHealth -= (other.gameObject.GetComponent<ObjectDamager>().objectDamage);
+            ObjectDamager.OnDamage += DestroyBuilding;
         }
+        private void OnDisable()
+        {
+            ObjectDamager.OnDamage -= DestroyBuilding;
+        }
+
+        private void DestroyBuilding()
+        {
+            objectHealth -= objectDamage;
+        }
+
         private void Update()
         {
             if (objectHealth <= 0)

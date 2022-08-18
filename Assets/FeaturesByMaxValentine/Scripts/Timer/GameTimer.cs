@@ -2,38 +2,40 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 namespace MaxValentine
 {
     public class GameTimer : MonoBehaviour
     {
-        public int timerTime;
-        public Text timerDisplay;
+        [SerializeField] private float timerDuration = 60;
+        [SerializeField] private float timer;
+        [SerializeField] private TextMeshProUGUI timerDisplay;
+        
 
-        //
-        //  private void Start()
-        //{
-        //    StartCoroutine(CountdownToEnd());
-        //}
+        private void OnEnable()
+        {
+            TimerManager.OnTimer += ResetTimer;
+        }
 
-        //IEnumerable CountdownToEnd()
-        //{
-        //   while(timerTime > 0)
-        //    {
-        //        timerDisplay.text = timerTime.ToString();
+        private void OnDisable()
+        {
+            TimerManager.OnTimer -= ResetTimer;
+        }
+        private void ResetTimer()
+        {
+            timer = timerDuration;
+        }
 
-        //        yield return new WaitForSeconds(1f);
-
-        //        timerTime--;
-        //    }
-
-        //    timerDisplay.text = "GAME OVER";
-
-        //    yield return new WaitForSeconds(1f);
-
-        //    timerDisplay.gameObject.SetActive(false);
-        //}
-        //}
-        /// </summary>
+        private void Update()
+        {
+            if(timer > 0)
+            {
+                timer -= Time.deltaTime;
+                timerDisplay.text = timer.ToString();
+            }
+        }
+    }
+     
        
         // Section of code above was taken from:
         // https://www.youtube.com/watch?v=ulxXGht5D2U&ab_channel=TurboMakesGames 
@@ -49,6 +51,4 @@ namespace MaxValentine
         /// Display victory message
         /// Else continue counting down
         /// </summary>
-    }
-
 }

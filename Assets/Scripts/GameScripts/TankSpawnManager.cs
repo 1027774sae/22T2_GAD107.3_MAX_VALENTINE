@@ -40,7 +40,7 @@ public class TankSpawnManager : MonoBehaviour
     /// <summary>
     /// Resets our game and destroys the current tanks
     /// </summary>
-    private void Reset()
+    public void Reset()
     {
         for (int i = 0; i < allTanksSpawnedIn.Count; i++)
         {

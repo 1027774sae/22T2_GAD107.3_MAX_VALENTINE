@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 362285530076045776}
   - component: {fileID: 6800395305727810014}
   - component: {fileID: -2882141218779517550}
-  - component: {fileID: 6428346748306510075}
+  - component: {fileID: 7757140015894575646}
   m_Layer: 0
   m_Name: Shell
   m_TagString: Untagged
@@ -201,7 +201,7 @@ MonoBehaviour:
   explosionForce: 1000
   maxShellLifeTime: 2
   explosionRadius: 5
---- !u!114 &6428346748306510075
+--- !u!114 &7757140015894575646
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -213,6 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9be32c682ef70aa498acc2d6076bd716, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shell: {fileID: 6863767184128917887}
   objectDamage: 10
 --- !u!1001 &8901574840371635723
 PrefabInstance:

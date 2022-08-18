@@ -10,7 +10,10 @@ namespace MaxValentine
 
         private void OnTriggerEnter(Collider other)
         {
-            OnTeleport();
+            if(OnTeleport != null)
+            {
+                OnTeleport();
+            }
         }
     }
 }
