@@ -71,7 +71,7 @@
     <Compile Include="Assets\FeaturesByMaxValentine\Scripts\Timer\GameTimer.cs" />
     <Compile Include="Assets\FeaturesByMaxValentine\Scripts\Teleporter Scripts\Teleporter.cs" />
     <Compile Include="Assets\Scripts\TankScripts\TankControls.cs" />
-    <Compile Include="Assets\FeaturesByMaxValentine\Scripts\Week 12\MainMenuManager.cs" />
+    <Compile Include="Assets\FeaturesByMaxValentine\Scripts\MainMenuManager.cs" />
     <Compile Include="Assets\Scripts\GameScripts\TankGameEvents.cs" />
     <Compile Include="Assets\Scripts\TankScripts\TankSoundEffects.cs" />
     <Compile Include="Assets\Scripts\TankScripts\TankMainGun.cs" />
