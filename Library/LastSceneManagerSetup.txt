@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/FeaturesByMaxValentine/Scenes/Main Menu.unity
+- path: Assets/Scenes/MainTankScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
